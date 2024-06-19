@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마리오 - 고전게임 갤러리</title>
+    <link rel="stylesheet" href="../css/mario.css">
+</head>
+<body data-game-key="reviews_mario">
+    <header>
+        <h1>고전게임 갤러리</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">홈</a></li>
+                <li><a href="pacman.html">팩맨</a></li>
+                <li><a href="tetris.html">테트리스</a></li>
+                <li><a href="mario.html">마리오</a></li>
+                <li><a href="galaga.html">갤러그</a></li>
+                <li><a href="donkeykong.html">동키콩</a></li>
+                <li><a href="sonic.html">소닉</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="game-detail">
+            <h2>마리오</h2>
+            <img src="../images/mario.png" alt="Mario">
+            <h3>게임 플레이 영상</h3>
+            <iframe src="https://www.youtube.com/embed/z4ghvlIUrYE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="info">
+                <h3>게임의 역사</h3>
+                <p>슈퍼 마리오는 1985년에 닌텐도가 개발한 플랫폼 게임으로, 마리오라는 캐릭터가 쿠파왕을 물리치고 피치 공주를 구하는 이야기를 다룹니다. 이 게임은 단순하면서도 도전적인 게임 플레이로 전 세계에서 큰 인기를 끌었습니다.</p>
+                <p>게임의 목표는 각 레벨을 완료하고, 최종적으로 쿠파왕을 물리치는 것입니다. 마리오는 다양한 적들과 장애물을 피하거나 무찌르면서 레벨을 진행합니다. 파워업 아이템을 통해 마리오는 더욱 강력해지며, 더 높은 점수를 얻을 수 있습니다.</p>
+                <p>슈퍼 마리오는 게임 역사상 가장 상징적인 게임 중 하나로, 수많은 속편과 파생 게임이 출시되었습니다. 마리오는 닌텐도의 마스코트로 자리잡았으며, 전 세계적으로 사랑받는 캐릭터입니다.</p>
+            </div>
+        </div>
+        <div class="reviews">
+            <h3>리뷰 및 평점</h3>
+            <form id="reviewForm">
+                <label for="username">이름:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="rating">평점:</label>
+                <select id="rating" name="rating">
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="1">★☆☆☆☆</option>
+                </select>
+                <label for="review">리뷰:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+                <button type="submit">리뷰 제출</button>
+            </form>
+            <div id="reviewsList">
+                <h4>리뷰 목록:</h4>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>고전게임 갤러리</p>
+    </footer>
+    <script src="../javascript/review.js"></script>
+</body>
+</html>

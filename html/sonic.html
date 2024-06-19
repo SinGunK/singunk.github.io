@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소닉 - 고전게임 갤러리</title>
+    <link rel="stylesheet" href="../css/sonic.css">
+</head>
+<body data-game-key="reviews_sonic">
+    <header>
+        <h1>고전게임 갤러리</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">홈</a></li>
+                <li><a href="pacman.html">팩맨</a></li>
+                <li><a href="tetris.html">테트리스</a></li>
+                <li><a href="mario.html">마리오</a></li>
+                <li><a href="galaga.html">갤러그</a></li>
+                <li><a href="donkeykong.html">동키콩</a></li>
+                <li><a href="sonic.html">소닉</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="game-detail">
+            <h2>소닉 더 헤지호그</h2>
+            <img src="../images/sonic.png" alt="Sonic">
+            <h3>게임 플레이 영상</h3>
+            <iframe src="https://www.youtube.com/embed/gjDanVVS5EI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="info">
+                <h3>게임의 역사</h3>
+                <p>소닉 더 헤지호그는 1991년에 세가가 출시한 플랫폼 게임으로, 세가 제네시스용으로 개발되었습니다. 소닉은 빠른 속도로 달릴 수 있는 푸른 고슴도치로, 닥터 에그맨의 악당 계획을 저지하기 위해 모험을 떠납니다.</p>
+                <p>소닉 더 헤지호그의 주요 목표는 각 스테이지를 빠른 속도로 통과하여 링을 모으고, 적을 물리치며, 최종적으로 닥터 에그맨을 물리치는 것입니다. 소닉은 점프를 통해 적을 공격하고, 스핀 대시를 사용하여 빠른 속도로 이동할 수 있습니다.</p>
+                <p>게임은 총 7개의 존으로 구성되어 있으며, 각 존은 3개의 액트로 나뉘어져 있습니다. 각 존의 마지막에는 보스전이 있으며, 닥터 에그맨을 물리쳐야 다음 존으로 넘어갈 수 있습니다. 소닉은 다양한 파워업 아이템을 통해 능력을 강화할 수 있습니다.</p>
+                <p>소닉 더 헤지호그는 출시 이후 큰 인기를 끌었으며, 소닉 시리즈는 세가의 대표적인 프랜차이즈로 자리잡았습니다. 소닉은 전 세계적으로 사랑받는 캐릭터가 되었으며, 다양한 플랫폼에서 여러 후속작이 출시되었습니다.</p>
+            </div>
+        </div>
+        <div class="reviews">
+            <h3>리뷰 및 평점</h3>
+            <form id="reviewForm">
+                <label for="username">이름:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="rating">평점:</label>
+                <select id="rating" name="rating">
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="1">★☆☆☆☆</option>
+                </select>
+                <label for="review">리뷰:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+                <button type="submit">리뷰 제출</button>
+            </form>
+            <div id="reviewsList">
+                <h4>리뷰 목록:</h4>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>고전게임 갤러리</p>
+    </footer>
+    <script src="../javascript/review.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>갤러그 - 고전게임 갤러리</title>
+    <link rel="stylesheet" href="../css/galaga.css">
+</head>
+<body data-game-key="reviews_galaga">
+    <header>
+        <h1>고전게임 갤러리</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">홈</a></li>
+                <li><a href="pacman.html">팩맨</a></li>
+                <li><a href="tetris.html">테트리스</a></li>
+                <li><a href="mario.html">마리오</a></li>
+                <li><a href="galaga.html">갤러그</a></li>
+                <li><a href="donkeykong.html">동키콩</a></li>
+                <li><a href="sonic.html">소닉</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="game-detail">
+            <h2>갤러그</h2>
+            <img src="../images/galaga.jpg" alt="Galaga">
+            <h3>게임 플레이 영상</h3>
+            <iframe src="https://www.youtube.com/embed/mw8xeytAGmM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="info">
+                <h3>게임의 역사</h3>
+                <p>갤러그는 1981년에 출시된 아케이드 슈팅 게임으로, 남코에서 개발했습니다. 이 게임은 스페이스 인베이더스의 후속작으로 간주되며, 빠른 속도와 전략적인 요소로 인해 큰 인기를 끌었습니다.</p>
+                <p>갤러그의 주요 목표는 플레이어가 우주선을 조종하여 적의 우주선을 파괴하는 것입니다. 적의 우주선은 다양한 패턴으로 공격하며, 플레이어는 이들을 피하고 공격해야 합니다. 특정 적들은 플레이어의 우주선을 납치할 수 있으며, 이를 구출하면 더 강력한 공격력을 가지게 됩니다.</p>
+                <p>갤러그는 여러 레벨을 포함하고 있으며, 각 레벨마다 적의 공격 패턴이 달라집니다. 보너스 레벨에서는 적의 공격 없이 점수를 획득할 수 있는 기회가 주어집니다. 이 게임은 여러 플랫폼으로 이식되었으며, 오늘날까지도 많은 팬들에게 사랑받고 있습니다.</p>
+            </div>
+        </div>
+        <div class="reviews">
+            <h3>리뷰 및 평점</h3>
+            <form id="reviewForm">
+                <label for="username">이름:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="rating">평점:</label>
+                <select id="rating" name="rating">
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="1">★☆☆☆☆</option>
+                </select>
+                <label for="review">리뷰:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+                <button type="submit">리뷰 제출</button>
+            </form>
+            <div id="reviewsList">
+                <h4>리뷰 목록:</h4>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>고전게임 갤러리</p>
+    </footer>
+    <script src="../javascript/review.js"></script>
+</body>
+</html>

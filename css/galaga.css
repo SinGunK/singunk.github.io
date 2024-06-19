@@ -1,0 +1,69 @@
+@import url('styles.css');
+
+body {
+    background-color: #000033;
+    color: #ffffff;
+}
+
+header {
+    background: #000080;
+    color: #ffffff;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #ff4500;
+}
+
+footer {
+    background: #000080;
+    color: #ffffff;
+}
+
+.game-detail {
+    color: #000000;
+    font-size: 18px;
+}
+
+.game-detail iframe {
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin: 20px 0;
+}
+
+.review-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.review-item .delete-review {
+    background-color: #000080;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.review-item .delete-review:hover {
+    background-color: #7373cd;
+}
